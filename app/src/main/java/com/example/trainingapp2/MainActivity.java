@@ -5,7 +5,10 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,8 +16,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        /* TextView
         setContentView(R.layout.activity_main);
-/*
+
         ConstraintLayout constraintLayout = new ConstraintLayout(this);
         TextView textView = new TextView(this);
 
@@ -50,6 +54,28 @@ public class MainActivity extends AppCompatActivity {
         constraintLayout.addView(textView);
         setContentView(constraintLayout);
 */
+
+        setContentView(R.layout.edit_text);
+        EditText editText = findViewById(R.id.edit_text1);
+
+        editText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+                TextView textView = findViewById(R.id.textView1);
+                textView.setText(charSequence);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
 
 
 

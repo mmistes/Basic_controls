@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/edit_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Здесь можно писать текст"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/textView1"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <EditText
+        android:id="@+id/edit_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Многострочное текстовое поле"
+        android:inputType="textMultiLine"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text1"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <EditText
+        android:id="@+id/edit_text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-mail адрес"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text2"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <EditText
+        android:id="@+id/edit_text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL"
+        android:inputType="textUri"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text3"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <EditText
+        android:id="@+id/edit_text5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Пароли"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text4"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <EditText
+        android:id="@+id/edit_text6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Первая буква всегда с капса"
+        android:inputType="textCapWords"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text5"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <EditText
+        android:id="@+id/edit_text7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Числа"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text6"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <EditText
+        android:id="@+id/edit_text8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Номер телефона"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text7"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <EditText
+        android:id="@+id/edit_text9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Дата"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text8"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <EditText
+        android:id="@+id/edit_text10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Время"
+        android:inputType="time"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text9"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <EditText
+        android:id="@+id/edit_text11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Дата и время"
+        android:inputType="datetime"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text10"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
